@@ -75,3 +75,18 @@ console.log("Debe pagar $" + precioHelados + " por " + Helados + " helados");
 }
 */
 
+let textos = " "
+
+do {
+    ingreseTexto = prompt("Ingrese el texo aqui o escriba (salir) para finalizar ")
+    if (ingreseTexto !== "salir"){
+        if(textos === " "){
+        textos = ingreseTexto;
+        } else {console.log(textos);
+            textos += ", " + ingreseTexto ;
+        }
+    }
+
+
+} while (ingreseTexto !== "salir" );
+alert (textos);
